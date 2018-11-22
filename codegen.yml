@@ -1,0 +1,10 @@
+schema: './schema.graphql'
+overwrite: true
+config:
+  noNamespaces: true
+generates:
+  types.ts:
+    plugins:
+      - typescript-common
+      - typescript-server
+      - typescript-resolvers

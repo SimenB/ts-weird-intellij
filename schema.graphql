@@ -1,0 +1,12 @@
+schema {
+  query: Query
+}
+
+type Transaction {
+  id: ID!
+  description: String!
+}
+
+type Query {
+  transaction(id: ID!): Transaction
+}
